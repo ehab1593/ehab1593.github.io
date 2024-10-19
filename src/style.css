@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre:wght@700&display=swap");
+
+
+html{
+    background-color: whitesmoke;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 950px;
+    margin-left: 200px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+    
+}
+
+h2 {
+    font-family: 'Proza Libre', sans-serif;
+}
+
+img {
+    width:300px;
+    height: 260px;
+    margin-left: 60px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.profile-img {
+    width:225px;
+    height: 225px;
+    margin-left: 60px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 3px solid  black;
+    object-fit: cover;
+}
+
+
+.navigation-items{
+    display: flex;
+    align-items:center;
+    list-style-type:none;
+    padding-right: 20px;;
+    margin: 0;
+    max-width: 900px;
+    margin-left: auto;
+    font-weight:bolder ;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none;
+}
+.navi {
+    padding-left: 20px;
+}
+
+details {
+    margin: 0;
+}
+  
+  .about-me{
+    display: flex;
+    align-items: center;
+  }
+
+  #skills-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  #skills-container > * {
+    font-size: 2em;
+    width: 1em;
+  }
+
+  .hover-title {
+    display: inline;
+     text-decoration: none;
+     transition-duration: 0.30s;
+     font-size: 16px;
+     margin: 20px;
+      }
+.project-title {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.project p {
+    margin-left: 50px;
+    margin-bottom: 16px;
+}
+
+  .hover-title:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 10px;
+    text-decoration-color: orangered; 
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  a {
+    transition-duration: 0.30s;
+    
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 10px;
+    text-decoration-color: orangered;
+    
+    padding: 10px;
+  }
+
+  /*.project-title ::before {
+ 
+    color: black;
+    font-size: 1em;
+    padding: 16px;
+    display: inline;
+  }*/
+
+  .project-image {
+    width: 50%;
+  }
+
+  .skills {
+    margin-top: 30px;
+  }
+
+  .heart {
+    color:rgb(223, 63, 35);
+    font-size: 18px;
+    display: inline;
+  }
+
+  #my-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Adjust width as needed */
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 2px solid #000000;
+    border-radius: 4px;
+  }
+
+  textarea {
+    width: 400px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 4px;
+  }
+
+  #send-btn {
+    color: #000000;
+    background-color: whitesmoke;
+    border: 2px solid #000000;
+    width: 120px;
+    padding: 5px;
+    margin-top: 20px;
+    transition-duration: 0.30s;
+  }
+
+  #send-btn:hover {
+    background-color: gray;
+    color: white;
+
+  }
+
+  /** styling for text highlighh**/
+  /** creating a class that will be added to the script**/
+  ¨
+  .word {
+    cursor: pointer;
+  }
+
+  .highlighted {
+    background-color: yellow;
+  }
+.about-me-div i {
+    font-size: 16px;
+
+    color: red;
+    vertical-align: middle;
+  }
+
+  #night-mode-icon {
+    margin-left: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 0px 5px;
+    transition-duration: 0.30s;
+}
+
+#night-mode-icon:hover {
+    background-color: #000000;
+    color: aliceblue;
+}
+
+.night-mode {
+    background-color: #1f1f1f;
+    color: aliceblue;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease-out ;
+}
+
+#success-message {
+    margin-top: 20px;
+    width: 50%;
+    font-size: 16px;
+    color: rgb(48, 46, 46);
+    background-color:rgb(110, 233, 110);
+    border: 0.5px solid black;
+    border-radius: 5px;
+    text-align: center;
+    padding:5px;
+
+}

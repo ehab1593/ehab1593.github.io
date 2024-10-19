@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d5975a057a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <title>Contact</title>
+</head>
+<body>
+    <nav>
+            <h2>Ehab Feroze</h2>
+            <ul class="navigation-items">
+                <li class="navi"><a class="" href="index.html">Home</a></li>
+                <li class="navi"><a class="" href="https://github.com/ehab1593" target="_blank">Projects</a></li>
+                <li class="navi"><a class="" href="">Contact</a></li>
+                <li class="navi"><a class="" href="Resume.pdf" target="_blank">Resume
+                </a></li>
+                <li id="night-mode-icon"><i class="fa-solid fa-moon"></i></li>
+
+    
+            </ul>
+        </nav>
+
+            <section style="font-family: 'Roboto';" class="contact">
+                
+                <div class="about-me-div">
+                    <h2>Contact</h2>
+                    <p style="font-weight: 500;">Have an interesting project or would you like to connect? Let me know. </p> <br>
+                        <form id="my-form" action="">
+                            <label for="name-input">Enter your name: </label>
+                            <input id="name-input" name="name" type="text" value="John Doe" required>
+
+                            <label for="email-input">Your email: </label>
+                            <input id="email-input" name="email" type="text" value="john.doe@xyz.com" required>
+
+                            <label for="text-input">Your message: </label>
+                            <textarea name="text-area" id="text-input">Enter your message here:</textarea>
+
+                            <input id="send-btn" type="submit" value="Send message" />
+                            <p id="success-message" class="hidden">Message sent!</p>
+                        </form>
+                        
+                </div>
+                </section>
+
+                <script>
+                     const icon = document.getElementById('night-mode-icon');
+
+                     icon.addEventListener('click', function(){
+                     document.documentElement.classList.toggle('night-mode');
+                    });
+
+                   
+
+                    const form = document.getElementById('my-form');
+
+                    form.addEventListener('submit', function(event){
+                        event.preventDefault();
+                        const message = document.getElementById('success-message');
+                        message.classList.remove('hidden');
+                        message.classList.add('visible');
+
+                        setTimeout(function(){
+
+                            message.classList.remove('visible');
+                            message.classList.add('hidden');
+                        }, 3000);
+                     
+                    });
+
+                    
+
+                </script>
+</body>
+</html>
